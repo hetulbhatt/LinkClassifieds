@@ -1,0 +1,13 @@
+<div>
+    <div class="row">
+      <div class="card col-sm-3 card1" id="card" *ngFor="let item of items">
+        <img src="{{ item.url }}" class="card-img-top" alt="Bad Url">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.itemname }}</h5>
+          <p class="card-text">{{ item.description }}</p>
+          <a class="btn btn-primary" (click)="callMore(item)">More Details</a>
+          <a class="btn btn-danger" (click)="deleteItem(item)">Delete Item</a>
+        </div>
+      </div>
+    </div>
+</div>
